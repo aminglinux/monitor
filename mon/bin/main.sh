@@ -4,7 +4,7 @@
 # 是否发送邮件的开关
 export send=1
 # 过滤ip地址
-addr=`/sbin/ifconfig |grep -A1 'em2' |grep addr: |awk '{print $2}'|awk -F: '{print $2}'|head -1`
+addr=`/sbin/ifconfig |grep -A1 'eth0' |grep addr: |awk '{print $2}'|awk -F: '{print $2}'|head -1`
 export addr=`hostname`:$addr
 
 dir=`pwd`

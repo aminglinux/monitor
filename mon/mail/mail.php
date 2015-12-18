@@ -234,11 +234,11 @@ class Smtp
 $file = $argv[2];
 $smtpserver = "smtp.qq.com";//SMTP服务器
 $smtpserverport = "25";//SMTP服务器端口
-$smtpusermail = "314228210@qq.com";//SMTP服务器的用户邮箱
-//$smtpemailto = "306798658@qq.com";//发送给谁
-$smtpemailto = "lishiming2009@139.com";//发送给谁
-$smtpuser = "314228210";//SMTP服务器的用户帐号
-$smtppass = "lishimingLsm1";//SMTP服务器的用户密码
+$smtpusermail = "xxxxxxxx@qq.com";//SMTP服务器的用户邮箱
+//$smtpemailto = "xxxxxx@qq.com";//发送给谁
+$smtpemailto = "xxxxxx@139.com";//发送给谁
+$smtpuser = "xxxxx";//SMTP服务器的用户帐号
+$smtppass = "xxxxxx";//SMTP服务器的用户密码
 $mailsubject = $argv[1];//邮件主题
 $mailbody = file_get_contents($file);//邮件内容
 $mailtype = "HTML";//邮件格式（HTML/TXT）,TXT为文本邮件
