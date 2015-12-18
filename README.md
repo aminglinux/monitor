@@ -30,3 +30,5 @@ conf下是配置文件
 shares下是各个监控脚本
 mail下是邮件引擎
 log下是日志。
+
+使用：需要添加一条cron * * * * * cd /usr/local/sbin/mon/bin; bash main.sh
