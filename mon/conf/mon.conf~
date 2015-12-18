@@ -1,0 +1,23 @@
+## to config the options if to monitor
+
+## cdb  主要定义mysql的服务器地址、端口以及user、password
+to_mon_cdb=0   ##0 or 1, default 0,0 not monitor, 1 monitor
+cdb_ip=10.20.3.13
+cdb_port=3315
+cdb_user=username
+cdb_pass=passwd
+
+## httpd   如果是1则监控，为0不监控
+to_mon_httpd=0
+
+## php 如果是1则监控，为0不监控
+to_mon_php_socket=0
+
+## http_code_502  需要定义访问日志的路径
+to_mon_502=1
+logfile=/data/log/xxx.xxx.com/access.log
+
+## request_count   定义日志路径以及域名
+to_mon_request_count=0
+req_log=/data/log/www.discuz.net/access.log
+domainname=www.discuz.net
